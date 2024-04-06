@@ -11,7 +11,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   autoStart: true,
   requires: [INotebookTracker],
   activate: (app: JupyterFrontEnd, notebooks: INotebookTracker) => {
-    console.log('JupyterLab extension jupyterlab_apod is activated!');
+    console.log('JupyterLab extension msgbridge is activated!');
 
     notebooks.activeCellChanged.connect((sender, cell) => {
       if (cell && cell.model.type === 'code') {

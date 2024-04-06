@@ -33,7 +33,7 @@ jobs:
         run: |
           echo "About to run Prep Release step"
           if [ -z "${{ secrets.ADMIN_GITHUB_TOKEN }}" ]; then
-            echo "ADMIN_GITHUB_TOKEN is not set."
+            echo "ADMIN_GITHUB_TOKEN is not set!"
           else
             echo "ADMIN_GITHUB_TOKEN is set."
           fi

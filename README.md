@@ -9,6 +9,14 @@ A JupyterLab extension that output to parent document
 
 ## Install
 
+To activate environment, execute:
+
+```bash
+conda create -n jupyterlab-ext --override-channels --strict-channel-priority -c conda-forge -c nodefaults jupyterlab=4 nodejs=18 git copier=7 jinja2-time
+
+conda activate jupyterlab-ext
+```
+
 To install the extension, execute:
 
 ```bash

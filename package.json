@@ -95,12 +95,7 @@
     },
     "jupyterlab": {
       "extension": true,
-      "outputDir": "msgbridge/labextension",
-      "_build": {
-        "load": "static/remoteEntry.d43a9ffc33a4e86eec79.js",
-        "extension": "./extension",
-        "style": "./style"
-      }
+      "outputDir": "msgbridge/labextension"
     },
     "eslintIgnore": [
       "node_modules",

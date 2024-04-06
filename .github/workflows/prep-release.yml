@@ -32,7 +32,11 @@ jobs:
       - name: Log Information
         run: |
           echo "About to run Prep Release step"
-          echo "Token: ${{ secrets.ADMIN_GITHUB_TOKEN }}"
+          if [ -z "${{ secrets.ADMIN_GITHUB_TOKEN }}" ]; then
+            echo "ADMIN_GITHUB_TOKEN is not set."
+          else
+            echo "ADMIN_GITHUB_TOKEN is set."
+          fi
 
       - name: Prep Release
         id: prep-release

@@ -8,12 +8,11 @@ file_extension: ''
 has_binder: true
 has_settings: false
 kind: frontend
-labextension_name: msgbridge
+labextension_name: jupyter-repl-msgbridge
 mimetype: ''
 mimetype_name: ''
 project_short_description: A JupyterLab extension that output to parent document
-python_name: msgbridge
+python_name: jupyter-repl-msgbridge
 repository: ''
 test: true
 viewer_name: ''
-

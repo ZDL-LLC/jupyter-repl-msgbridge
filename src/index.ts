@@ -6,12 +6,12 @@ import { INotebookTracker } from '@jupyterlab/notebook';
 import { ICodeCellModel } from '@jupyterlab/cells';
 
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'msgbridge:plugin',
+  id: 'jupyter-repl-msgbridge:plugin',
   description: 'A JupyterLab extension that output to parent document',
   autoStart: true,
   requires: [INotebookTracker],
   activate: (app: JupyterFrontEnd, notebooks: INotebookTracker) => {
-    console.log('JupyterLab extension msgbridge is activated!');
+    console.log('JupyterLab extension jupyter-repl-msgbridge is activated!');
 
     notebooks.activeCellChanged.connect((sender, cell) => {
       if (cell && cell.model.type === 'code') {

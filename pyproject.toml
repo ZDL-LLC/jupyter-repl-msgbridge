@@ -33,24 +33,24 @@ source = "nodejs"
 fields = ["description", "authors"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["msgbridge/labextension"]
+artifacts = ["jupyter-repl-msgbridge/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"msgbridge/labextension" = "share/jupyter/labextensions/msgbridge"
-"install.json" = "share/jupyter/labextensions/msgbridge/install.json"
+"jupyter-repl-msgbridge/labextension" = "share/jupyter/labextensions/jupyter-repl-msgbridge"
+"install.json" = "share/jupyter/labextensions/jupyter-repl-msgbridge/install.json"
 
 [tool.hatch.build.hooks.version]
-path = "msgbridge/_version.py"
+path = "jupyter-repl-msgbridge/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "msgbridge/labextension/static/style.js",
-    "msgbridge/labextension/package.json",
+    "jupyter-repl-msgbridge/labextension/static/style.js",
+    "jupyter-repl-msgbridge/labextension/package.json",
 ]
-skip-if-exists = ["msgbridge/labextension/static/style.js"]
+skip-if-exists = ["jupyter-repl-msgbridge/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 build_cmd = "build:prod"
@@ -60,7 +60,7 @@ npm = ["jlpm"]
 build_cmd = "install:extension"
 npm = ["jlpm"]
 source_dir = "src"
-build_dir = "msgbridge/labextension"
+build_dir = "jupyter-repl-msgbridge/labextension"
 
 [tool.jupyter-releaser.options]
 version_cmd = "hatch version"

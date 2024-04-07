@@ -1,7 +1,7 @@
 {
-  "name": "msgbridge-ui-tests",
+  "name": "jupyter-repl-msgbridge-ui-tests",
   "version": "1.0.0",
-  "description": "JupyterLab msgbridge Integration Tests",
+  "description": "JupyterLab jupyter-repl-msgbridge Integration Tests",
   "private": true,
   "scripts": {
     "start": "jupyter lab --config jupyter_server_test_config.py",

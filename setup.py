@@ -1,8 +1,8 @@
 __import__("setuptools").setup(
-    name="msgbridge",
+    name="jupyter-repl-msgbridge",
     version='0.2.5',
     description="Plugins for handling messages between iframe and hosting website",
-    url="https://github.com/ZDL-LLC/msgbridge",
+    url="https://github.com/ZDL-LLC/jupyter-repl-msgbridge",
     author="ZDL, LLC",
-    keywords="msgbridge, jupyterlite",
+    keywords="jupyter-repl-msgbridge, jupyterlite",
 )

@@ -1,4 +1,4 @@
-# Making a new release of msgbridge
+# Making a new release of jupyter-repl-msgbridge
 
 The extension can be published to `PyPI` and `npm` manually or using the [Jupyter Releaser](https://github.com/jupyter-server/jupyter_releaser).
 

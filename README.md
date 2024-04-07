@@ -1,4 +1,4 @@
-# msgbridge
+# jupyter-repl-msgbridge
 
 A JupyterLab extension that output to parent document
 
@@ -19,7 +19,7 @@ conda activate jupyterlab-ext
 To install the extension, execute:
 
 ```bash
-pip install msgbridge
+pip install jupyter-repl-msgbridge
 ```
 
 ## Uninstall
@@ -27,7 +27,7 @@ pip install msgbridge
 To remove the extension, execute:
 
 ```bash
-pip uninstall msgbridge
+pip uninstall jupyter-repl-msgbridge
 ```
 
 ## Contributing
@@ -42,7 +42,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the msgbridge directory
+# Change directory to the jupyter-repl-msgbridge directory
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -71,12 +71,12 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall msgbridge
+pip uninstall jupyter-repl-msgbridge
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `msgbridge` within that folder.
+folder is located. Then you can remove the symlink named `jupyter-repl-msgbridge` within that folder.
 
 ### Testing the extension
 

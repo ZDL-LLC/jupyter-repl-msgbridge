@@ -7,9 +7,9 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-msgbridge/labextension
+jupyter-repl-msgbridge/labextension
 # Version file is handled by hatchling
-msgbridge/_version.py
+jupyter-repl-msgbridge/_version.py
 
 # Integration tests
 ui-tests/test-results/

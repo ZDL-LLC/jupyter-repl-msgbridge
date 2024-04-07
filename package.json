@@ -1,6 +1,6 @@
 {
     "name": "jupyter-repl-msgbridge",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "description": "A JupyterLab extension that output to parent document",
     "keywords": [
         "jupyter",
